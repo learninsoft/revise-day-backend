@@ -5,7 +5,6 @@ from rest_framework.decorators import api_view
 
 @api_view(('GET', ))
 def get_data(request):
-    print(dir(request))
     static_files_path = settings.STATIC_URL
     data = {
         'title': 'ReviseDay',
